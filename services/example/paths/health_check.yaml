@@ -1,0 +1,14 @@
+get:
+  summary: Health check endpoint
+  description: Returns the health status of the API.
+  responses:
+    "200":
+      description: Successful health check
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: ok
